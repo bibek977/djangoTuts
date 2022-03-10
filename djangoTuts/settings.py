@@ -54,7 +54,7 @@ ROOT_URLCONF = 'djangoTuts.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ["reactfrontend/build"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -123,6 +123,11 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # added manually
+
+# STATICFILES_DIRS = [
+#     BASE_DIR / "static"
+# ]
+
 STATICFILES_DIRS = [
-    BASE_DIR / "static"
+     "reactfrontend/build/static"
 ]
